@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #ffce6b;
-    --secondary-color: #73eef7;
-    --accent-color:rgb(112, 112, 112);
+    --primary-color: #febc37;
+    --secondary-color: #51d3dc;
+    --accent-color:#0a595f;
 }
 html {
 
@@ -43,7 +43,7 @@ html {
 
 .accordion-button {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
-    color: rgb(0, 0, 0) !important;
+    color:rgb(255, 253, 253) !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -57,7 +57,7 @@ html {
 }
 
 .carousel-caption {
-    background-color: var(--primary-color)
+    background-color: var(--primary-color) !important;
     border-radius: 15px;
     padding: 20px;
 }
@@ -70,7 +70,7 @@ html {
 }
 
 main {
-    padding-top: 200px; /* Increased from 200px to 250px */
+    padding-top: 200px; 
     padding-bottom: 50px;
     flex: 1;
     background-color: rgb(255, 253, 253);
