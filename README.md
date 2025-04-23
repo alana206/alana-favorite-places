@@ -5,11 +5,13 @@ A responsive website showcasing three unique locations from video games, featuri
 ## Description
 
 This project is a personal website that presents three fascinating locations:
+
 - Adobe Abodes - A desert-themed architectural location
 - Mega City - A futuristic Tokyo-inspired metropolis from Fortnite
 - Snoop's Doggpound - A remixed version of The Agency owned by Snoop Dogg
 
 The website features:
+
 - Responsive design using Bootstrap 5
 - Interactive accordion sections for each location
 - Photo carousel gallery
@@ -26,7 +28,7 @@ The website features:
 ## Features
 
 - **Responsive Layout**: Adapts seamlessly to different screen sizes
-- **Interactive Elements**: 
+- **Interactive Elements**:
   - Collapsible accordion sections
   - Image carousel with controls
   - Hover effects on navigation items
@@ -38,12 +40,14 @@ The website features:
 
 ## Setup
 
-1. Clone the repository:
+. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/alana-favorite-places.git
 ```
 
-2. Open the project in your preferred web browser:
+. Open the project in your preferred web browser:
+
 ```bash
 cd alana-favorite-places
 start index.html
@@ -51,8 +55,8 @@ start index.html
 
 ## Project Structure
 
-```
-alana-favorite-places/
+``` this
+├──alana-favorite-places/
 │
 ├── index.html
 ├── photos.html
