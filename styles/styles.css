@@ -1,78 +1,89 @@
+/* Fortnite-inspired color scheme */
 :root {
-    --primary-color: #febc37;
-    --secondary-color: #51d3dc;
-    --accent-color:#0a595f;
+    --fortnite-blue: #2196f3;
+    --fortnite-purple: #9c27b0;
+    --fortnite-lightblue: #53ffd7;
+    --fortnite-dark: #1a1a1a;
 }
-html {
 
-   background-color:rgb(254, 250, 250);
+body {
+    background-color: var(--fortnite-dark);
+    font-family: 'Burbank Big Condensed', sans-serif;
+    color: white;
 }
 
 .custom-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+    background: linear-gradient(135deg, var(--fortnite-blue), var(--fortnite-purple));
+    padding: 2rem 0;
+    box-shadow: 0 0 20px rgba(156, 39, 176, 0.5);
 }
 
-.custom-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1030;
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
-}
-
-.btn-custom {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    border: none;
-    padding: 10px 25px;
-    border-radius: 25px;
-    transition: transform 0.3s ease;
-}
-
-.btn-custom:hover {
-    transform: scale(1.05);
-    background-color: var(--primary-color);
-    color: rgb(0, 0, 0);
-}
-
-.accordion-button {
-    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)) !important;
-    color:rgb(255, 253, 253) !important;
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: var(--primary-color) !important;
-    color: rgb(0, 0, 0) !important;
+.nav-link {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    transform: scale(1.05);
+    color: var(--fortnite-lightblue) !important;
+    transform: scale(1.1);
+}
+
+/* Accordion customization */
+.accordion-button {
+    background-color: var(--fortnite-dark);
+    color: white;
+    border: 2px solid var(--fortnite-purple);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--fortnite-purple);
+    color: white;
+}
+
+.accordion-body {
+    background-color: rgba(33, 150, 243, 0.1);
+    border: 1px solid var(--fortnite-blue);
+}
+
+/* Image effects */
+.img-fluid {
+    border: 3px solid var(--fortnite-purple);
     transition: transform 0.3s ease;
 }
 
-.carousel-caption {
-    background-color: var(--primary-color) !important;
-    border-radius: 15px;
-    padding: 20px;
+.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--fortnite-blue);
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    padding: 25px;
+/* Footer styling */
+.custom-footer {
+    background: linear-gradient(135deg, var(--fortnite-purple), var(--fortnite-blue));
+    margin-top: 2rem;
 }
 
-main {
-    padding-top: 200px; 
-    padding-bottom: 50px;
-    flex: 1;
-    background-color: rgb(255, 253, 253);
-    margin: 0;
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+/* Animation for accordion transitions */
+.accordion-button::after {
+    color: var(--fortnite-lightblue);
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
 }
