@@ -44,6 +44,7 @@ body {
 .accordion-body {
     background-color: rgba(33, 150, 243, 0.1);
     border: 1px solid var(--fortnite-blue);
+    padding: 0;
 }
 
 /* Image effects */
@@ -86,4 +87,57 @@ body {
 
 .accordion-button:not(.collapsed)::after {
     transform: rotate(-180deg);
+}
+
+/* Button Styles with Glow Effect */
+.btn-custom {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px var(--fortnite-lightblue),
+                0 0 25px var(--fortnite-lightblue),
+                0 0 35px var(--fortnite-purple);
+}
+
+/* Carousel Control Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    filter: drop-shadow(0 0 8px var(--fortnite-lightblue));
+}
+
+/* Carousel Indicators */
+.carousel-indicators button {
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators button:hover {
+    box-shadow: 0 0 10px var(--fortnite-lightblue);
+}
+
+/* Parallax Section Styles */
+.parallax-section {
+    position: relative;
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.content-overlay {
+    background: rgba(26, 26, 26, 0.85);
+    padding: 2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    margin: 2rem 0;
 }
